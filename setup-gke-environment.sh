@@ -19,3 +19,4 @@ sudo /opt/google-cloud-sdk/bin/gcloud --quiet config set container/cluster $CLUS
 sudo /opt/google-cloud-sdk/bin/gcloud config set compute/zone ${CLUSTER_ZONE}
 sudo /opt/google-cloud-sdk/bin/gcloud --quiet container clusters get-credentials $CLUSTER_NAME
 sudo chown -R ubuntu:ubuntu /home/ubuntu/.kube
+sudo chown -R ubuntu:ubuntu /home/ubuntu/.config
